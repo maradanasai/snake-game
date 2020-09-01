@@ -256,4 +256,12 @@ public class Map {
 
         System.out.println(sb);
     }
+
+    public void debug_print_maze_path() {
+        for (int y = 0; y < height; ++y) {
+            for (int x = 0; x < width; ++x)
+                System.out.printf("%4d ", tour(x,y));
+            System.out.println();
+        }
+    }
 }

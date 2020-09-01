@@ -12,9 +12,9 @@ public class Main {
     public static void main(String[] args) {
         Map map = new Map();
         map.init(14, 14);
-        addWalls(map);
         map.generate_r(-1, -1, 0, 0);
         map.generateTourNumber();
+        // map.debug_print_maze_path();
 
         Food food = new Food(map);
 
